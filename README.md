@@ -153,4 +153,4 @@ func main() {
 - [ ] As always, test test test!
 
 # License
-[godub](https://github.com/iFaceless/godub) is licensed under the MIT license. Please feel free and have fun~
+[godub](https://github.com/iFaceless/godub) is licensed under the [MIT license](./LICENSE.md). Please feel free and have fun~
