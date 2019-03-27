@@ -14,7 +14,7 @@ There are some audio packages in the Go world, but we believe that [pydub](https
 - Slice an audio.
 - Concatenate audios.
 - Repeat an audio.
-- Overlay with other audio.
+- Overlay with other audios.
 - Reverse an audio.
 - ...
 
@@ -133,7 +133,7 @@ func main() {
 
 # Dependency
 
-[godub] uses [ffmpeg](https://ffmpeg.org/ffmpeg.html) as its backend to support encoding, decoding and conversion.
+[godub](https://github.com/iFaceless/godub)  uses [ffmpeg](https://ffmpeg.org/ffmpeg.html) as its backend to support encoding, decoding and conversion.
 
 # References
 1. [go-binary-pack](https://github.com/roman-kachanovsky/go-binary-pack)
