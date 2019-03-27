@@ -5,7 +5,7 @@ godub
 
 # Why
 
-There are some audio packages in the Go world, but we believe that [pydub](https://github.com/jiaaro/pydub) provides a better way to do stuff to audio. Therefore, here we have [godub](https://github.com/iFaceless)!
+There are some audio packages in the Go world, but we believe that [pydub](https://github.com/jiaaro/pydub) provides a better way to do stuff to audios. Therefore, here we have [godub](https://github.com/iFaceless)!
 
 # Features
 
@@ -16,7 +16,7 @@ There are some audio packages in the Go world, but we believe that [pydub](https
 - Repeat an audio.
 - Overlay with other audio.
 - Reverse an audio.
-...
+- ...
 
 # Quickstart
 
@@ -43,7 +43,7 @@ func main() {
 	filePath := path.Join(dataDirectory(), "code-geass.mp3")
 	segment, _ := godub.NewLoader().Load(filePath)
 
-	// Export as mp3 audio.
+	// Export as a mp3 file.
 	toFilePath := path.Join(dataDirectory(), "converted", "code-geass.mp3")
 	err := godub.NewExporter(toFilePath).
 		WithDstFormat("mp3").
@@ -109,7 +109,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Save the newly created audio segment as mp3.
+	// Save the newly created audio segment as mp3 file.
 	newPth := path.Join(dataDirectory(), "append", "code-geass.mp3")
 	godub.NewExporter(newPth).WithDstFormat("mp3").WithBitRate(audio.MP3BitRatePerfect).Export(newSeg)
 }
@@ -153,4 +153,4 @@ func main() {
 - [ ] As always, test test test!
 
 # License
-[godub] is licensed under the MIT license. Please feel free and have fun~
+[godub](https://github.com/iFaceless/godub) is licensed under the MIT license. Please feel free and have fun~
