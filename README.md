@@ -1,18 +1,18 @@
 godub
 ==================
 
-[godub](https://github.com/iFaceless) lets you manipulate audio in an easy and elegant way. It's deeply inspired by the excellent project [pydub](https://github.com/jiaaro/pydub).
+[godub](https://github.com/iFaceless) lets you manipulate audio in an easy and elegant way. It's ported from the excellent project [pydub](https://github.com/jiaaro/pydub).
 
 # Why
 
-There are some audio packages in the Go world, but we believe that [pydub](https://github.com/jiaaro/pydub) provides a better way to do stuff to audios. Therefore, here we have [godub](https://github.com/iFaceless)! However, not all the features of [pydub](https://github.com/jiaaro/pydub) are supported.
+There are some audio packages in the Go world, but we believe that [pydub](https://github.com/jiaaro/pydub) provides a better way to do stuff to audios. Therefore, here we have [godub](https://github.com/iFaceless)! However, due to limited time and personal ability, not all the features of [pydub](https://github.com/jiaaro/pydub) are supported.
 
 # Features
 
-- Load audio file, supports mp3/m4a/wav...
-- Export/Convert audio with custom config.
+- Load audio files, supports mp3/m4a/wav...
+- Export/convert audio with custom configs.
 - Slice an audio.
-- Concatenate audios.
+- Concatenate two or more audios.
 - Repeat an audio.
 - Overlay with other audios.
 - Reverse an audio.
@@ -153,4 +153,5 @@ func main() {
 - [ ] As always, test test test!
 
 # License
-[godub](https://github.com/iFaceless/godub) is licensed under the [MIT license](./LICENSE.md). Please feel free and have fun~
+
+[godub](https://github.com/iFaceless/godub) is licensed under the [MIT license](./LICENSE.md). Please feel free and have fun.
