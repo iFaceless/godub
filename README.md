@@ -5,7 +5,7 @@ godub
 
 # Why
 
-There are some audio packages in the Go world, but we believe that [pydub](https://github.com/jiaaro/pydub) provides a better way to do stuff to audios. Therefore, here we have [godub](https://github.com/iFaceless)!
+There are some audio packages in the Go world, but we believe that [pydub](https://github.com/jiaaro/pydub) provides a better way to do stuff to audios. Therefore, here we have [godub](https://github.com/iFaceless)! However, not all the features of [pydub](https://github.com/jiaaro/pydub) are supported.
 
 # Features
 
