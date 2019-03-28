@@ -15,7 +15,7 @@ func GetEncoderName() string {
 }
 
 func IsCommandAvailable(name string) bool {
-	cmd := exec.Command("command", "-v", name)
+	cmd := exec.Command("which", name)
 	if err := cmd.Run(); err != nil {
 		return false
 	}
