@@ -58,7 +58,7 @@ func (e *Exporter) WithCover(c string) *Exporter {
 	return e
 }
 
-func (e *Exporter) WithBitRate(rate string) *Exporter {
+func (e *Exporter) WithBitRate(rate int) *Exporter {
 	e.converter.WithBitRate(rate)
 	return e
 }
