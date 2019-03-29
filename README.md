@@ -47,7 +47,7 @@ func main() {
 	toFilePath := path.Join(dataDirectory(), "converted", "code-geass.mp3")
 	err := godub.NewExporter(toFilePath).
 		WithDstFormat("mp3").
-		WithBitRate("128k").
+		WithBitRate(128000).
 		Export(segment)
 	if err != nil {
 		log.Fatal(err)
@@ -68,7 +68,7 @@ func main() {
 	w, _ := os.Create(toFilePath)
 
 	err := audio.NewConverter(w).
-		WithBitRate("64k").
+		WithBitRate(64000).
 		WithDstFormat("m4a").
 		Convert(filePath)
 	if err != nil {
