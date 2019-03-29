@@ -31,22 +31,22 @@ const (
 )
 
 const (
-	MP3BitRateEconomy  = "64k"
-	MP3BitRateStandard = "128k"
-	MP3BitRateGood     = "192k"
-	MP3BitRatePerfect  = "320k"
+	MP3BitRateEconomy  = 64 * 1000
+	MP3BitRateStandard = 128 * 1000
+	MP3BitRateGood     = 192 * 1000
+	MP3BitRatePerfect  = 320 * 1000
 
-	M4ABitRateEconomy  = "64k"
-	M4ABitRateStandard = "128k"
-	M4ABitRateGood     = "160k"
-	M4ABitRatePerfect  = "256k"
+	M4ABitRateEconomy  = 64 * 1000
+	M4ABitRateStandard = 128 * 1000
+	M4ABitRateGood     = 160 * 1000
+	M4ABitRatePerfect  = 256 * 1000
 )
 
 type Converter struct {
 	w             io.Writer
 	channels      int
 	dstFormat     string
-	bitRate       string
+	bitRate       int
 	codec         string
 	coverPath     string
 	tags          map[string]string
@@ -103,8 +103,8 @@ func (c *Converter) WithChannels(v int) *Converter {
 	return c
 }
 
-func (c *Converter) WithBitRate(rate string) *Converter {
-	if rate == "" {
+func (c *Converter) WithBitRate(rate int) *Converter {
+	if rate == 0 {
 		return c
 	}
 
@@ -265,7 +265,7 @@ func (c *Converter) extendCoverArgs() error {
 
 func (c *Converter) extendBitRateArgs() {
 	if c.bitRate != "" {
-		c.extendCmdArgs("-b:a", c.bitRate)
+		c.extendCmdArgs("-b:a", fmt.Sprintf("%d", c.bitRate))
 	}
 }
 
