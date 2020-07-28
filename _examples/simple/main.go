@@ -9,8 +9,8 @@ import (
 
 	"time"
 
-	"github.com/iFaceless/godub"
-	"github.com/iFaceless/godub/converter"
+	"github.com/yeoji/godub"
+	"github.com/yeoji/godub/converter"
 	"github.com/caicloud/nirvana/log"
 )
 

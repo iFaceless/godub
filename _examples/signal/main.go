@@ -8,8 +8,8 @@ import (
 	"path"
 	"runtime"
 
-	"github.com/iFaceless/godub"
-	"github.com/iFaceless/godub/signals"
+	"github.com/yeoji/godub"
+	"github.com/yeoji/godub/signals"
 )
 
 func main() {

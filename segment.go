@@ -10,9 +10,9 @@ import (
 
 	"time"
 
-	"github.com/iFaceless/godub/audioop"
-	"github.com/iFaceless/godub/utils"
-	"github.com/iFaceless/godub/wav"
+	"github.com/yeoji/godub/audioop"
+	"github.com/yeoji/godub/utils"
+	"github.com/yeoji/godub/wav"
 )
 
 var (

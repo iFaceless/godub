@@ -9,7 +9,7 @@ import (
 
 	"strings"
 
-	"github.com/iFaceless/godub/converter"
+	"github.com/yeoji/godub/converter"
 )
 
 var (

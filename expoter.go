@@ -6,8 +6,8 @@ import (
 
 	"bytes"
 
-	"github.com/iFaceless/godub/converter"
-	"github.com/iFaceless/godub/wav"
+	"github.com/yeoji/godub/converter"
+	"github.com/yeoji/godub/wav"
 )
 
 type Exporter struct {
